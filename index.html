@@ -2,209 +2,347 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rentomojo Navbar</title>
+<title>Rentomojo UI</title>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="navbar-container">
 
-    
     <div class="img-nav">
       <img src="logo-new-navyblue.webp" alt="logo">
+      
     </div>
-
- 
-    <div class="location">
-      Noida <i class="bi bi-chevron-down"></i>
-    </div>
-
     
+
+    <div class="location">
+  <a href="city.html">
+    Noida <i class="bi bi-chevron-down"></i>
+  </a>
+</div>
+
     <div class="search">
       <input type="text" placeholder="Search for products">
       <i class="bi bi-search"></i>
     </div>
 
-    
     <div class="right">
-      <div class="cart">
-        <i class="bi bi-cart"></i> Cart
-      </div>
+      <a href="cart.html"><div class="cart.html  id=cartitem">
+        <i class="bi bi-cart"></i> cart
+      </div></a>
+       <a href="login.html" class="login-link">
+       
       <button class="login-btn">LOGIN / SIGNUP</button>
+      </a>
     </div>
+
+
+   
 
   </div>
 </nav>
 
-<!--top bar section -->
+<!-- SLIDER -->
+<swiper-container class="mySwiper" navigation="true">
+  <swiper-slide><img src="./ChatGPT Image Dec 22, 2025, 12_53_16 PM.png" class="sliderclass">
+  </swiper-slide>
+  <swiper-slide><img src="./ChatGPT Image Dec 22, 2025, 01_05_41 PM.png" class="sliderclass"></swiper-slide>
+  <swiper-slide><img src="./ChatGPT Image Dec 22, 2025, 12_53_16 PM.png" class="sliderclass"></swiper-slide>
+</swiper-container>
 
- <swiper-container class="mySwiper" navigation="true">
-    <swiper-slide>
-        <img src="./Blue and White Modern AC Installation Services Facebook Cover.png" alt="" class="sliderclass">
-    </swiper-slide>
-    <swiper-slide>
-           <img src="./Blue and White Modern AC Installation Services Facebook Cover.png" alt="" class="sliderclass">
-    </swiper-slide>
-    <swiper-slide>   <img src="./Blue and White Modern AC Installation Services Facebook Cover.png" alt="" class="sliderclass"></swiper-slide>
-    <swiper-slide>   <img src="./Blue and White Modern AC Installation Services Facebook Cover.png" alt="" class="sliderclass"></swiper-slide>
-    <swiper-slide>   <img src="./Blue and White Modern AC Installation Services Facebook Cover.png" alt="" class="sliderclass"></swiper-slide>
-    
-  </swiper-container>
-
-<!-- categery -->
-
-<section class="categery">
+<!-- CATEGORY -->
 
 
 
+<section class="features">
 
-  <div class="categerycontainer">
-
-    <div class="category-box">
-      <img src="./splitac2.jpg" alt="">
-      <h2>Window AC</h2>
+  <div class="card">
+    <div class="icon-box">
+      <i class="bi bi-truck"></i>
     </div>
-
-    <div class="category-box">
-      <img src="./splitac2.jpg" alt="">
-      <h2>Split AC</h2>
-    </div>
-
-    <div class="category-box">
-      <img src="./splitac2.jpg" alt="">
-      <h2>Cassette AC</h2>
-    </div>
-    
-    <div class="category-box">
-      <img src="./splitac2.jpg" alt="">
-      <h2>Split AC</h2>
-    </div>
-
+    <h3>Free Delivery</h3>
+    <p>Same day delivery across Delhi NCR</p>
   </div>
+
+  <div class="card">
+    <div class="icon-box">
+      <i class="bi bi-wrench"></i>
+    </div>
+    <h3>Free Installation</h3>
+    <p>Professional installation by certified technicians</p>
+  </div>
+
+  <div class="card">
+    <div class="icon-box">
+      <i class="bi bi-shield-check"></i>
+    </div>
+    <h3>Free Maintenance</h3>
+    <p>Unlimited service calls during rental period</p>
+  </div>
+
+  <div class="card">
+    <div class="icon-box">
+      <i class="bi bi-clock"></i>
+    </div>
+    <h3>Flexible Tenure</h3>
+    <p>Choose from 3, 6, or 12 month rental plans</p>
+  </div>
+
 </section>
 
+
+
+
+
+
+
+
+
+<!-- PRODUCT -->
 <section class="product-section">
-  <div class="product-grid">
+
+  <div class="header">
+    <h2>You’ll love to<br>take these home</h2>
+  </div>
+
+  <div class="scroll-container">
 
     <div class="card">
-      <img src="./Blue and White Modern AC Installation Services Facebook Cover.png" alt="Single Door Fridge">
-      <h3>Single Door Fridge (210 L)</h3>
-      <p class="rent">Rent</p>
-      <div class="card-footer">
-        <span>₹ 753/mo</span>
-        <button>See more</button>
-      </div>
+    <a href="">
+        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+      <h4>Voltas 1 Ton 3 Star</h4>
+      <p>Rent</p>
+      <strong>₹1099/mo</strong>
+      <button>See more</button>
+    </a>
     </div>
 
     <div class="card">
-      <img src="./Blue and White Modern AC Installation Services Facebook Cover.png" alt="Microwave">
-      <h3>Microwave Solo 20L</h3>
-      <p class="rent">Rent</p>
-      <div class="card-footer">
-        <span>₹ 244/mo</span>
-        <button>See more</button>
-      </div>
+    <a href="">
+        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+      <h4>LG 1.5 Ton Inverter</h4>
+      <p>Rent</p>
+      <strong>₹1299/mo</strong>
+      <button>See more</button>
+    </a>
     </div>
 
     <div class="card">
-      <img src="./Blue and White Modern AC Installation Services Facebook Cover.png" alt="AC">
-      <h3>Voltas 1.5 Ton 3 Star AC</h3>
-      <p class="rent">Rent</p>
-      <div class="card-footer">
-        <span>₹ 1179/mo</span>
-        <button>See more</button>
-      </div>
+      <a href="">
+        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+      <h4>Samsung 1 Ton AC</h4>
+      <p>Rent</p>
+      <strong>₹999/mo</strong>
+      <button>See more</button>
+      </a>
     </div>
-    
-    
+
+    <div class="card">
+    <a href="">
+        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+      <h4>Blue Star 2 Ton</h4>
+      <p>Rent</p>
+      <strong>₹1599/mo</strong>
+      <button>See more</button>
+    </a>
+    </div>
+
+    <div class="card">
+     <a href="">
+       <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+      <h4>Hitachi 1.5 Ton</h4>
+      <p>Rent</p>
+      <strong>₹1399/mo</strong>
+      <button>See more</button>
+     </a>
+    </div>
+
+    <div class="card">
+      <a href="">
+        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+      <h4>Daikin 1 Ton</h4>
+      <p>Rent</p>
+      <strong>₹1199/mo</strong>
+      <button>See more</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="">
+        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+      <h4>Carrier 1.5 Ton</h4>
+      <p>Rent</p>
+      <strong>₹1349/mo</strong>
+      <button>See more</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="">
+        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+      <h4>Panasonic 1 Ton</h4>
+      <p>Rent</p>
+      <strong>₹1049/mo</strong>
+      <button>See more</button>
+      </a>
+    </div>
+
+    <div class="card">
+     <a href="">
+       <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+      <h4>IFB 1.5 Ton</h4>
+      <p>Rent</p>
+      <strong>₹1249/mo</strong>
+      <button>See more</button>
+     </a>
+    </div>
 
     
-    
-    <div class="card">
-      <img src="./Blue and White Modern AC Installation Services Facebook Cover.png" alt="AC">
-      <h3 >1 Ton 3 Star Inverter Split AC</h3>
-      <p class="rent">Rent</p>
-      <div class="card-footer">
-        <span>₹ 1119/mo</span>
-        <button>See more</button>
-      </div>
+      <div class="card">
+     <a href="">
+       <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+      <h4>Godrej 1 Ton</h4>
+      <p>Rent</p>
+      <strong>₹949/mo</strong>
+      <button>See more</button>
+     </a>
     </div>
+    
 
   </div>
 </section>
+
+
+ 
+
+
+
+
 
 
 
 
 <!-- feature -->
-
 <section class="featurecontainer">
-<div class="topbar">
-<h1>There's more <br>
-<span>to renting</span>
 
-<div class="thin-line">
+  <div class="topbar">
+    <h1>There's more <br><span>to renting</span></h1>
+    <div class="thin-line"></div>
+  </div>
+
+  <div class="featurecart">
+    <div class="featurecartinner">
+
+      <div class="feature-item">
+        <img src="https://cdn.simpleicons.org/googlemaps/4fd1c5">
+        <h3>Finest-quality products</h3>
+        <p>Quality matters to you, and us! That's why we do a strict quality-check for every product.</p>
+      </div>
+
+      <div class="feature-item">
+        <img src="https://cdn.simpleicons.org/googlemaps/4fd1c5">
+        <h3>Free relocation</h3>
+        <p>Changing your house or even your city? We'll relocate your rented products for free.</p>
+      </div>
+
+      <div class="feature-item">
+        <img src="https://cdn.simpleicons.org/x/4fd1c5">
+        <h3>Free maintenance</h3>
+        <p>Keeping your rented products in perfect condition is on us.</p>
+      </div>
+
+      <div class="feature-item">
+        <img src="https://cdn.simpleicons.org/x/4fd1c5">
+        <h3>Cancel anytime</h3>
+        <p>Pay only for the time you use the product and close your subscription easily.</p>
+      </div>
+
+      <div class="feature-item">
+        <img src="https://cdn.simpleicons.org/android/4fd1c5">
+        <h3>Easy return on delivery</h3>
+        <p>If you don't like the product on delivery, return it immediately.</p>
+      </div>
+
+      <div class="feature-item">
+        <img src="https://cdn.simpleicons.org/android/4fd1c5">
+        <h3>Keep upgrading</h3>
+        <p>Upgrade anytime and enjoy newer designs with no hassle.</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- testimonial -->
  
-</div>
+<section class="testimonial-section">
 
-</h1>
-</div>
+  <h2 class="title">What our customers say</h2>
 
-
-
-
-
-
-
-
-
-<div class="featurecart">
-  <div class="featurecartinner">
-
-    <div class="feature-item">
-      <img src="https://cdn.simpleicons.org/googlemaps/4fd1c5" />
-      <h3>Finest-quality products</h3>
-      <p>Quality matters to you, and us! That's why we do a strict quality-check for every product.</p>
+  <div class="slider">
+    
+    <div class="slide">
+      <img src="https://i.pravatar.cc/100?img=1">
+      <h4>Anjali Sharma</h4>
+      <p>
+        I got to know about RentoMojo through a friend and rented an AC.
+        Delivery was quick and installation was smooth.
+      </p>
     </div>
 
-    <div class="feature-item">
-      <img src="https://cdn.simpleicons.org/googlemaps/4fd1c5" />
-      <h3>Free relocation</h3>
-      <p>Changing your house or even your city? We'll relocate your rented products for free.</p>
+    <div class="slide">
+      <img src="https://i.pravatar.cc/100?img=2">
+      <h4>Shreyas Ravet</h4>
+      <p>
+        Rentomojo made setting up my new place super easy.
+        Customer support is excellent.
+      </p>
     </div>
 
-    <div class="feature-item">
-      <img src="https://cdn.simpleicons.org/x/4fd1c5" />
-      <h3>Free maintenance</h3>
-      <p>Keeping your rented products in perfect condition is on us.</p>
+    <div class="slide">
+      <img src="https://i.pravatar.cc/100?img=3">
+      <h4>Rohit Mehta</h4>
+      <p>
+        Affordable rent and quality products.
+        Highly recommended for AC rentals.
+      </p>
     </div>
 
-    <div class="feature-item">
-      <img src="https://cdn.simpleicons.org/x/4fd1c5" />
-      <h3>Cancel anytime</h3>
-      <p>Pay only for the time you use the product and close your subscription easily.</p>
+    <div class="slide">
+      <img src="https://i.pravatar.cc/100?img=4">
+      <h4>Neha Singh</h4>
+      <p>
+        Hassle-free experience with fast delivery and installation.
+      </p>
     </div>
 
-    <div class="feature-item">
-      <img src="https://cdn.simpleicons.org/android/4fd1c5" />
-      <h3>Easy return on delivery</h3>
-      <p>If you don't like the product on delivery, return it immediately.</p>
+    <div class="slide">
+      <img src="https://i.pravatar.cc/100?img=5">
+      <h4>Amit Verma</h4>
+      <p>
+        Renting appliances has never been this simple and affordable.
+      </p>
     </div>
 
-    <div class="feature-item">
-      <img src="https://cdn.simpleicons.org/android/4fd1c5" />
-      <h3>Keep upgrading</h3>
-      <p>Upgrade anytime and enjoy newer designs with no hassle.</p>
+    <div class="slide">
+      <img src="https://i.pravatar.cc/100?img=6">
+      <h4>Pooja Patel</h4>
+      <p>
+        Smooth service and great quality products.
+        Loved the experience.
+      </p>
     </div>
 
   </div>
-</div>
+
+</section>
 
 
 
@@ -214,28 +352,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-  </section>
-
-
-<!-- testemonial section -->
- 
-
-
-
-
-
-
-  <!-- footer -->
 
 <footer class="footer">
   <div class="footer-container">
@@ -280,31 +396,16 @@
 
     <div class="footer-col">
       <h4>NEED HELP ?</h4>
-      <p class="email"> jo@rentomojo.com</p>
+      <p class="email">✈ jo@rentomojo.com</p>
 
       <h4 class="download">DOWNLOAD APP</h4>
-     
+      
     </div>
 
   </div>
 
-  
-</footer>
+ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
-
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+body {
+  min-height: 100vh;
+  background: #f5f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.logincontainer {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+
+.loginleft {
+  width: 50%;
+}
+
+.loginleft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.loginright {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginright h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+
+.inputbox input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+
+.radiobox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.radiobox input {
+  margin-top: 3px;
+}
+
+.radiobox a {
+  color: #ff5a5f;
+  text-decoration: none;
+}
+
+
+.continue-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: #ff5a5f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.continue-btn:hover {
+  background: #e0484d;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+    <div class="logincontainer">
+
+  
+  <div class="loginleft">
+    <img src="./272.jpg" alt="Login Image">
+  </div>
+
+  
+  <div class="loginright">
+
+    <h2>Enter your number to <br>Signup or Login</h2>
+
+    
+    <div class="inputbox">
+      <input type="tel" placeholder="Enter mobile number" maxlength="10">
+    </div>
+
+   
+    <div class="radiobox">
+      <input type="radio" id="terms">
+      <label for="terms">
+        I agree to the <a href="#">Terms & Conditions</a> and
+        <a href="#">Privacy Policy</a>
+      </label>
+    </div>
+
+   
+    <div class="radiobox">
+      <input type="radio" id="offer">
+      <label for="offer">
+        Get free expert furnishing consultation from Rentomojo
+      </label>
+    </div>
+
+    
+   <a href="otppage">
+     <button class="continue-btn">Continue</button>
+   </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
