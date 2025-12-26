@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product Banner (HTML + CSS Only)</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#fff;
+  padding:40px;
+}
+
+/* CONTAINER */
+.product-wrapper{
+  max-width:1200px;
+ 
+}
+
+/* MAIN IMAGE AREA */
+.main-image{
+  position:relative;
+  width:100%;
+  max-height:80vh;
+  border-radius:6px;
+  overflow:hidden;
+}
+
+/* ALL IMAGES */
+.main-image img{
+  width:100%;
+  height:100%;
+  max-height:80vh;
+  object-fit:contain;
+  display:none;
+}
+
+/* SHOW ACTIVE IMAGE */
+#img1:checked ~ .main-image .img1,
+#img2:checked ~ .main-image .img2,
+#img3:checked ~ .main-image .img3,
+#img4:checked ~ .main-image .img4{
+  display:block;
+}
+
+/* LIKE BUTTON */
+.like-toggle{
+  position:absolute;
+  top:20px;
+  right:20px;
+}
+
+.like-toggle input{
+  display:none;
+}
+
+.like-toggle label{
+  width:42px;
+  height:42px;
+  background:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  cursor:pointer;
+  box-shadow:0 5px 15px rgba(0,0,0,0.15);
+  transition:0.3s;
+}
+
+.like-toggle input:checked + label{
+  background:#e53935;
+  color:#fff;
+  transform:scale(1.1);
+}
+
+/* THUMBNAILS */
+.thumbnail-row{
+  margin-top:20px;
+  display:flex;
+  justify-content:flex-end;
+  gap:12px;
+}
+
+.thumbnail-row label{
+  border:2px solid transparent;
+  border-radius:4px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.thumbnail-row label img{
+  width:90px;
+  height:60px;
+  object-fit:cover;
+  display:block;
+}
+
+/* ACTIVE BORDER */
+#img1:checked ~ .thumbnail-row .t1,
+#img2:checked ~ .thumbnail-row .t2,
+#img3:checked ~ .thumbnail-row .t3,
+#img4:checked ~ .thumbnail-row .t4{
+  border-color:#e53935;
+}
+
+/* HIDE RADIOS */
+input[type="radio"]{
+  display:none;
+}
+</style>
+</head>
+<body>
+
+<div class="product-wrapper">
+
+  
+  <input type="radio" name="gallery" id="img1" checked>
+  <input type="radio" name="gallery" id="img2">
+  <input type="radio" name="gallery" id="img3">
+  <input type="radio" name="gallery" id="img4">
+
+  <!-- MAIN IMAGE -->
+  <div class="main-image">
+
+    <!-- LIKE -->
+    <div class="like-toggle">
+      <input type="checkbox" id="like">
+      <label for="like">❤</label>
+    </div>
+
+    <img src="./sofa_june_web.webp" class="img1">
+    <img src="./bed_june_web.webp" class="img2">
+    <img src="./2j4tghug-1024x512.webp" class="img3">
+    <img src="./sofa_june_web.webp" class="img4">
+  </div>
+
+  <!-- THUMBNAILS -->
+  <div class="thumbnail-row">
+    <label for="img1" class="t1">
+      <img src="./sofa_june_web.webp">
+    </label>
+    <label for="img2" class="t2">
+      <img src="./bed_june_web.webp">
+    </label>
+    <label for="img3" class="t3">
+      <img src="./f9tf1ofs-500x500 (2).webp">
+    </label>
+    <label for="img4" class="t4">
+      <img src="./sofa_june_web.webp">
+    </label>
+  </div>
+
+</div>
+
+</body>
+</html>

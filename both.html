@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AC Rent – Modern Filter</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#f5f6f8;
+}
+
+/* WRAPPER */
+.wrapper{
+  width:85%;
+  margin:40px auto;
+}
+
+/* TITLE */
+h2{
+  margin-bottom:20px;
+}
+
+/* FILTER BAR */
+.filter-bar{
+  display:flex;
+  gap:20px;
+  margin-bottom:30px;
+  flex-wrap:wrap;
+}
+
+/* FILTER CARD */
+.filter-box{
+  background:#fff;
+  padding:18px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  flex:1;
+  min-width:260px;
+}
+
+.filter-box label{
+  font-size:13px;
+  color:#777;
+  display:block;
+  margin-bottom:10px;
+}
+
+/* SEARCH */
+.search-input{
+  width:100%;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  font-size:14px;
+}
+
+/* PRICE FILTER */
+.price-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.price-box{
+  flex:1;
+  display:flex;
+  align-items:center;
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:10px 12px;
+  font-size:14px;
+}
+
+.price-box span{
+  color:#777;
+  margin-right:6px;
+}
+
+.price-box input{
+  border:none;
+  outline:none;
+  width:100%;
+  font-size:14px;
+}
+
+.price-sep{
+  font-size:14px;
+  color:#777;
+}
+
+/* PRODUCTS */
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#fff;
+  border-radius:16px;
+  padding:15px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card img{
+  width:100%;
+  height:150px;
+  object-fit:contain;
+}
+
+.card h4{
+  margin:10px 0;
+  font-size:16px;
+}
+
+.card .price{
+  font-size:15px;
+  font-weight:bold;
+  color:#e53935;
+}
+
+.card button{
+  margin-top:15px;
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #e53935;
+  background:transparent;
+  color:#e53935;
+  cursor:pointer;
+}
+
+.card button:hover{
+  background:#e53935;
+  color:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<h2>Air Conditioners on Rent</h2>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+
+  <!-- SEARCH -->
+  <div class="filter-box">
+    <label>Search AC</label>
+    <input class="search-input" type="text" id="searchInput" placeholder="Search by brand or model">
+  </div>
+
+  <!-- PRICE RANGE -->
+  <div class="filter-box">
+    <label>Price Range (Monthly)</label>
+    <div class="price-row">
+      <div class="price-box">
+        <span>₹</span>
+        <input type="number" id="minPrice" placeholder="Min" value="800">
+      </div>
+      <div class="price-sep">–</div>
+      <div class="price-box">
+        <span>₹</span>
+        <input type="number" id="maxPrice" placeholder="Max" value="3000">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- PRODUCTS -->
+<div class="product-grid" id="productGrid">
+
+  <div class="card" data-name="voltas 1 ton" data-price="1299">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Voltas 1 Ton 3 Star</h4>
+    <div class="price">₹1299 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="lg 1.5 ton" data-price="1499">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>LG 1.5 Ton Inverter</h4>
+    <div class="price">₹1499 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="samsung 1 ton" data-price="1399">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Samsung 1 Ton AC</h4>
+    <div class="price">₹1399 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+
+
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+
+
+
+  <div class="card" data-name="lg 1.5 ton" data-price="1499">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>LG 1.5 Ton Inverter</h4>
+    <div class="price">₹1499 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="samsung 1 ton" data-price="1399">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Samsung 1 Ton AC</h4>
+    <div class="price">₹1399 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+
+
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+
+
+  <div class="card" data-name="lg 1.5 ton" data-price="1499">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>LG 1.5 Ton Inverter</h4>
+    <div class="price">₹1499 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="samsung 1 ton" data-price="1399">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Samsung 1 Ton AC</h4>
+    <div class="price">₹1399 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+
+
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+
+
+
+  <div class="card" data-name="lg 1.5 ton" data-price="1499">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>LG 1.5 Ton Inverter</h4>
+    <div class="price">₹1499 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="samsung 1 ton" data-price="1399">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Samsung 1 Ton AC</h4>
+    <div class="price">₹1399 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+
+
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+
+
+
+
+  <div class="card" data-name="lg 1.5 ton" data-price="1499">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>LG 1.5 Ton Inverter</h4>
+    <div class="price">₹1499 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="samsung 1 ton" data-price="1399">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Samsung 1 Ton AC</h4>
+    <div class="price">₹1399 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+
+
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+
+
+
+
+  <div class="card" data-name="lg 1.5 ton" data-price="1499">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>LG 1.5 Ton Inverter</h4>
+    <div class="price">₹1499 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="samsung 1 ton" data-price="1399">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Samsung 1 Ton AC</h4>
+    <div class="price">₹1399 / month</div>
+    <button>View Plan</button>
+  </div>
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+
+
+
+  <div class="card" data-name="blue star 2 ton" data-price="1799">
+    <img src="https://jaipurservicecenter.in/images/acimg.jpg">
+    <h4>Blue Star 2 Ton AC</h4>
+    <div class="price">₹1799 / month</div>
+    <button>View Plan</button>
+  </div>
+</div>
+
+</div>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+const minPrice = document.getElementById("minPrice");
+const maxPrice = document.getElementById("maxPrice");
+const cards = document.querySelectorAll(".card");
+
+function filterProducts(){
+  const searchText = searchInput.value.toLowerCase();
+  const min = parseInt(minPrice.value) || 0;
+  const max = parseInt(maxPrice.value) || 999999;
+
+  cards.forEach(card=>{
+    const name = card.dataset.name;
+    const price = parseInt(card.dataset.price);
+
+    if(name.includes(searchText) && price >= min && price <= max){
+      card.style.display = "block";
+    }else{
+      card.style.display = "none";
+    }
+  });
+}
+
+searchInput.addEventListener("keyup", filterProducts);
+minPrice.addEventListener("input", filterProducts);
+maxPrice.addEventListener("input", filterProducts);
+</script>
+
+</body>
+</html>

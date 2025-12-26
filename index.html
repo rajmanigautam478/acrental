@@ -1,347 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Rentomojo UI</title>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="stylesheet" href="index.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Rentomojo UI</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+  <link rel="stylesheet" href="index.css">
+
+  <!-- owl closer -->
+
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="navbar-container">
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-container">
 
-    <div class="img-nav">
-      <img src="logo-new-navyblue.webp" alt="logo">
-      
+      <!-- Logo -->
+      <div class="img-nav">
+        <img src="logo-new-navyblue.webp" alt="logo">
+      </div>
+
+      <!-- Location -->
+      <div class="location">
+        <a href="city.html">
+          Noida <i class="bi bi-chevron-down"></i>
+        </a>
+      </div>
+
+      <!-- Search -->
+      <div class="search">
+        <input type="text" placeholder="Search for products">
+        <i class="bi bi-search"></i>
+      </div>
+
+      <!-- Right Side: Cart & Login -->
+      <div class="right">
+        <a href="cart.html">
+          <div id="cartitem">
+            <i class="bi bi-cart"></i> Cart
+          </div>
+        </a>
+
+        <a href="login.html">
+          <button class="login-btn">LOGIN / SIGNUP</button>
+        </a>
+      </div>
+
     </div>
-    
+  </nav>
 
-    <div class="location">
-  <a href="city.html">
-    Noida <i class="bi bi-chevron-down"></i>
-  </a>
-</div>
+  <!-- SLIDER -->
 
-    <div class="search">
-      <input type="text" placeholder="Search for products">
-      <i class="bi bi-search"></i>
+  <swiper-container class="mySwiper" navigation="true" autoplay-delay="2000" autoplay-disable-on-interaction="false"
+    speed="800" loop="true">
+
+    <swiper-slide><img src="./sofa_june_web.webp" class="sliderclass">
+    </swiper-slide>
+    <swiper-slide><img src="./Mobile ad Noida-b7ng9c.png" class="sliderclass"></swiper-slide>
+    <swiper-slide><img src="./bed_june_web.webp" class="sliderclass"></swiper-slide>
+  </swiper-container>
+
+  <!-- CATEGORY -->
+
+  <section class="features">
+    <h1>Rent AC & Appliances</h1>
+    <div class="features-grid">
+      <div class="card1">
+        <div class="icon-box">
+          <i class="bi bi-truck"></i>
+        </div>
+        <p>Free Delivery</p>
+
+      </div>
+
+      <div class="card1">
+        <div class="icon-box">
+          <i class="bi bi-wrench"></i>
+        </div>
+        <p>Free Installation</p>
+
+      </div>
+
+      <div class="card1">
+        <div class="icon-box">
+          <i class="bi bi-shield-check"></i>
+        </div>
+        <p>Free Maintenance</p>
+
+      </div>
+
+      <div class="card1">
+        <div class="icon-box">
+          <i class="bi bi-clock"></i>
+        </div>
+        <p>Flexible Tenure</p>
+
+      </div>
+
+
+      <div class="card1">
+        <div class="icon-box">
+          <i class="bi bi-wrench"></i>
+        </div>
+        <p>Free Installation</p>
+
+      </div>
+
+
+
+
+
     </div>
-
-    <div class="right">
-      <a href="cart.html"><div class="cart.html  id=cartitem">
-        <i class="bi bi-cart"></i> cart
-      </div></a>
-       <a href="login.html" class="login-link">
-       
-      <button class="login-btn">LOGIN / SIGNUP</button>
-      </a>
-    </div>
-
-
-   
-
-  </div>
-</nav>
-
-<!-- SLIDER -->
-<swiper-container class="mySwiper" navigation="true">
-  <swiper-slide><img src="./ChatGPT Image Dec 22, 2025, 12_53_16 PM.png" class="sliderclass">
-  </swiper-slide>
-  <swiper-slide><img src="./ChatGPT Image Dec 22, 2025, 01_05_41 PM.png" class="sliderclass"></swiper-slide>
-  <swiper-slide><img src="./ChatGPT Image Dec 22, 2025, 12_53_16 PM.png" class="sliderclass"></swiper-slide>
-</swiper-container>
-
-<!-- CATEGORY -->
+  </section>
 
 
 
-<section class="features">
+  <!-- PRODUCT -->
+  <section class="product-section">
+    <div class="container">
 
-  <div class="card">
-    <div class="icon-box">
-      <i class="bi bi-truck"></i>
-    </div>
-    <h3>Free Delivery</h3>
-    <p>Same day delivery across Delhi NCR</p>
-  </div>
-
-  <div class="card">
-    <div class="icon-box">
-      <i class="bi bi-wrench"></i>
-    </div>
-    <h3>Free Installation</h3>
-    <p>Professional installation by certified technicians</p>
-  </div>
-
-  <div class="card">
-    <div class="icon-box">
-      <i class="bi bi-shield-check"></i>
-    </div>
-    <h3>Free Maintenance</h3>
-    <p>Unlimited service calls during rental period</p>
-  </div>
-
-  <div class="card">
-    <div class="icon-box">
-      <i class="bi bi-clock"></i>
-    </div>
-    <h3>Flexible Tenure</h3>
-    <p>Choose from 3, 6, or 12 month rental plans</p>
-  </div>
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- PRODUCT -->
-<section class="product-section">
-
-  <div class="header">
-    <h2>You’ll love to<br>take these home</h2>
-  </div>
-
-  <div class="scroll-container">
-
-    <div class="card">
-    <a href="">
-        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
-      <h4>Voltas 1 Ton 3 Star</h4>
-      <p>Rent</p>
-      <strong>₹1099/mo</strong>
-      <button>See more</button>
-    </a>
-    </div>
-
-    <div class="card">
-    <a href="">
-        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
-      <h4>LG 1.5 Ton Inverter</h4>
-      <p>Rent</p>
-      <strong>₹1299/mo</strong>
-      <button>See more</button>
-    </a>
+    <div class="header">
+      <h2>You’ll love to<br>take these home</h2>
+      <a href="productdata.html" class="view-all-btn">View All</a>
     </div>
 
-    <div class="card">
-      <a href="">
-        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
-      <h4>Samsung 1 Ton AC</h4>
-      <p>Rent</p>
-      <strong>₹999/mo</strong>
-      <button>See more</button>
-      </a>
+
+     <div class="thin-line"></div>
+
+
+    <!-- <div class="grid-container"> -->
+
+      <div class="product-carousel owl-carousel owl-theme">
+        <!-- card  -->
+        <div class="item">
+          <div class="card">
+            <a href="product-detail.html">
+              <img src="./1seyj9by-500x500 (2).webp">
+              <h4 style="text-align: start;">voltas 1.5 Ton Inverter</h4>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
+                <div>
+                  <p style="margin-bottom: 5px; text-align: start; color: #555;">Rent</p>
+                  <strong>₹1299/mo</strong>
+                </div>
+                <div>
+                  <button>See more</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="item">
+          <div class="card">
+            <a href="product-detail.html">
+              <img src="./6ddmuk6o-500x500.webp">
+              <h4 style="text-align: start;">hitachi 1.5 Ton Inverter</h4>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
+                <div>
+                  <p style="margin-bottom: 5px; text-align: start; color: #555;">Rent</p>
+                  <strong>₹1299/mo</strong>
+                </div>
+                <div>
+                  <button>See more</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="item">
+          <div class="card">
+            <a href="product-detail.html">
+              <img src="./c9or60bm-500x500.webp">
+              <h4 style="text-align: start;">LG 2 Ton Inverter</h4>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
+                <div>
+                  <p style="margin-bottom: 5px; text-align: start; color: #555;">Rent</p>
+                  <strong>₹1299/mo</strong>
+                </div>
+                <div>
+                  <button>See more</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="item">
+          <div class="card">
+            <a href="product-detail.html">
+              <img src="./pm997b2l-500x500.webp">
+              <h4 style="text-align: start;">samsung 1.5 Ton Inverter</h4>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
+                <div>
+                  <p style="margin-bottom: 5px; text-align: start; color: #555;">Rent</p>
+                  <strong>₹1299/mo</strong>
+                </div>
+                <div>
+                  <button>See more</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- add more card  -->
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- feature -->
+  <section class="featurecontainer">
+
+    <div class="topbar">
+      <h2>There's more <br><span>to renting</span></h2>
+      <div class="thin-line"></div>
     </div>
 
-    <div class="card">
-    <a href="">
-        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
-      <h4>Blue Star 2 Ton</h4>
-      <p>Rent</p>
-      <strong>₹1599/mo</strong>
-      <button>See more</button>
-    </a>
+    <div class="featurecart">
+      <div class="featurecartinner">
+
+        <div class="feature-item">
+          <img src="https://cdn.simpleicons.org/googlemaps/4fd1c5">
+          <h3>Finest-quality products</h3>
+          <p>Quality matters to you, and us! That's why we do a strict quality-check for every product.</p>
+        </div>
+
+        <div class="feature-item">
+          <img src="https://cdn.simpleicons.org/googlemaps/4fd1c5">
+          <h3>Free relocation</h3>
+          <p>Changing your house or even your city? We'll relocate your rented products for free.</p>
+        </div>
+
+        <div class="feature-item">
+          <img src="https://cdn.simpleicons.org/googlemaps/4fd1c5">
+          <h3>Free maintenance</h3>
+          <p>Keeping your rented products in perfect condition is on us.</p>
+        </div>
+
+        <div class="feature-item">
+          <img src="https://cdn.simpleicons.org/googlemaps/4fd1c5">
+          <h3>Cancel anytime</h3>
+          <p>Pay only for the time you use the product and close your subscription easily.</p>
+        </div>
+
+        <div class="feature-item">
+          <img src="https://cdn.simpleicons.org/android/4fd1c5">
+          <h3>Easy return on delivery</h3>
+          <p>If you don't like the product on delivery, return it immediately.</p>
+        </div>
+
+        <div class="feature-item">
+          <img src="https://cdn.simpleicons.org/android/4fd1c5">
+          <h3>Keep upgrading</h3>
+          <p>Upgrade anytime and enjoy newer designs with no hassle.</p>
+        </div>
+
+      </div>
     </div>
 
-    <div class="card">
-     <a href="">
-       <img src="https://jaipurservicecenter.in/images/acimg.jpg">
-      <h4>Hitachi 1.5 Ton</h4>
-      <p>Rent</p>
-      <strong>₹1399/mo</strong>
-      <button>See more</button>
-     </a>
+    <div class="knowmore">
+      know more
     </div>
 
-    <div class="card">
-      <a href="">
-        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
-      <h4>Daikin 1 Ton</h4>
-      <p>Rent</p>
-      <strong>₹1199/mo</strong>
-      <button>See more</button>
-      </a>
-    </div>
+  </section>
 
-    <div class="card">
-      <a href="">
-        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
-      <h4>Carrier 1.5 Ton</h4>
-      <p>Rent</p>
-      <strong>₹1349/mo</strong>
-      <button>See more</button>
-      </a>
-    </div>
-
-    <div class="card">
-      <a href="">
-        <img src="https://jaipurservicecenter.in/images/acimg.jpg">
-      <h4>Panasonic 1 Ton</h4>
-      <p>Rent</p>
-      <strong>₹1049/mo</strong>
-      <button>See more</button>
-      </a>
-    </div>
-
-    <div class="card">
-     <a href="">
-       <img src="https://jaipurservicecenter.in/images/acimg.jpg">
-      <h4>IFB 1.5 Ton</h4>
-      <p>Rent</p>
-      <strong>₹1249/mo</strong>
-      <button>See more</button>
-     </a>
-    </div>
-
-    
-      <div class="card">
-     <a href="">
-       <img src="https://jaipurservicecenter.in/images/acimg.jpg">
-      <h4>Godrej 1 Ton</h4>
-      <p>Rent</p>
-      <strong>₹949/mo</strong>
-      <button>See more</button>
-     </a>
-    </div>
-    
-
-  </div>
-</section>
-
+  <!-- testimonial -->
 
  
 
-
-
-
-
-
-
-
-<!-- feature -->
-<section class="featurecontainer">
-
-  <div class="topbar">
-    <h1>There's more <br><span>to renting</span></h1>
-    <div class="thin-line"></div>
-  </div>
-
-  <div class="featurecart">
-    <div class="featurecartinner">
-
-      <div class="feature-item">
-        <img src="https://cdn.simpleicons.org/googlemaps/4fd1c5">
-        <h3>Finest-quality products</h3>
-        <p>Quality matters to you, and us! That's why we do a strict quality-check for every product.</p>
-      </div>
-
-      <div class="feature-item">
-        <img src="https://cdn.simpleicons.org/googlemaps/4fd1c5">
-        <h3>Free relocation</h3>
-        <p>Changing your house or even your city? We'll relocate your rented products for free.</p>
-      </div>
-
-      <div class="feature-item">
-        <img src="https://cdn.simpleicons.org/x/4fd1c5">
-        <h3>Free maintenance</h3>
-        <p>Keeping your rented products in perfect condition is on us.</p>
-      </div>
-
-      <div class="feature-item">
-        <img src="https://cdn.simpleicons.org/x/4fd1c5">
-        <h3>Cancel anytime</h3>
-        <p>Pay only for the time you use the product and close your subscription easily.</p>
-      </div>
-
-      <div class="feature-item">
-        <img src="https://cdn.simpleicons.org/android/4fd1c5">
-        <h3>Easy return on delivery</h3>
-        <p>If you don't like the product on delivery, return it immediately.</p>
-      </div>
-
-      <div class="feature-item">
-        <img src="https://cdn.simpleicons.org/android/4fd1c5">
-        <h3>Keep upgrading</h3>
-        <p>Upgrade anytime and enjoy newer designs with no hassle.</p>
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-<!-- testimonial -->
- 
 <section class="testimonial-section">
-
   <h2 class="title">What our customers say</h2>
 
-  <div class="slider">
-    
-    <div class="slide">
-      <img src="https://i.pravatar.cc/100?img=1">
-      <h4>Anjali Sharma</h4>
-      <p>
-        I got to know about RentoMojo through a friend and rented an AC.
-        Delivery was quick and installation was smooth.
-      </p>
+  <div class="testi-carousel owl-carousel owl-theme">
+
+    <div class="item1">
+      <div class="slide">
+        <img src="https://i.pravatar.cc/100?img=3" style="width:25%;">
+        <h4>Anjali Sharma</h4>
+        <p>
+          I got to know about RentoMojo through a friend and rented an AC.
+          Delivery was quick and installation was smooth.
+        </p>
+      </div>
     </div>
 
-    <div class="slide">
-      <img src="https://i.pravatar.cc/100?img=2">
-      <h4>Shreyas Ravet</h4>
-      <p>
-        Rentomojo made setting up my new place super easy.
-        Customer support is excellent.
-      </p>
+    <div class="item1">
+      <div class="slide">
+        <img src="https://i.pravatar.cc/100?img=3" style="width:25%;">
+        <h4>Shreyas Ravet</h4>
+        <p>
+          Rentomojo made setting up my new place super easy.
+          Customer support is excellent.
+        </p>
+      </div>
     </div>
 
-    <div class="slide">
-      <img src="https://i.pravatar.cc/100?img=3">
-      <h4>Rohit Mehta</h4>
-      <p>
-        Affordable rent and quality products.
-        Highly recommended for AC rentals.
-      </p>
+    <div class="item1">
+      <div class="slide">
+       <img src="https://i.pravatar.cc/100?img=3" style="width:25%;">
+
+        <h4>Rohit Mehta</h4>
+        <p>
+          Affordable rent and quality products.
+          Highly recommended for AC rentals.
+        </p>
+      </div>
     </div>
 
-    <div class="slide">
-      <img src="https://i.pravatar.cc/100?img=4">
-      <h4>Neha Singh</h4>
-      <p>
-        Hassle-free experience with fast delivery and installation.
-      </p>
+    <div class="item1">
+      <div class="slide">
+        <img src="https://i.pravatar.cc/100?img=3" style="width:25%;">>
+        <h4>Neha Singh</h4>
+        <p>
+          Hassle-free experience with fast delivery and installation.
+        </p>
+      </div>
     </div>
 
-    <div class="slide">
-      <img src="https://i.pravatar.cc/100?img=5">
-      <h4>Amit Verma</h4>
-      <p>
-        Renting appliances has never been this simple and affordable.
-      </p>
+    <div class="item1">
+      <div class="slide">
+        <img src="https://i.pravatar.cc/100?img=3" style="width:25%;">
+        <h4>Amit Verma</h4>
+        <p>
+          Renting appliances has never been this simple and affordable.
+        </p>
+      </div>
     </div>
 
-    <div class="slide">
-      <img src="https://i.pravatar.cc/100?img=6">
-      <h4>Pooja Patel</h4>
-      <p>
-        Smooth service and great quality products.
-        Loved the experience.
-      </p>
+    <div class="item1">
+      <div class="slide">
+         <img src="https://i.pravatar.cc/100?img=3" style="width:25%;">
+        <h4>Pooja Patel</h4>
+        <p>
+          Smooth service and great quality products.
+          Loved the experience.
+        </p>
+      </div>
     </div>
 
   </div>
-
 </section>
 
 
@@ -353,59 +361,142 @@
 
 
 
-<footer class="footer">
-  <div class="footer-container">
+  <footer class="footer">
 
-    <div class="footer-col">
-      <h4>RENTOMOJO</h4>
-      <ul>
-        <li>About Us</li>
-        <li>Culture</li>
-        <li>Investors</li>
-        <li>Careers</li>
-        <li>Contact</li>
-        <li>Our Benefits</li>
-        <li>Sitemap</li>
-        <li>B2B - Rentomojo for Business</li>
-        <li>Mojo Mover</li>
-        <li>AQI</li>
-      </ul>
+    <!-- UPPER FOOTER -->
+    <div class="footer-top container">
+
+      <div class="footer-col">
+        <h4>RENTOMOJO</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Culture</li>
+          <li>Investors</li>
+          <li>Careers</li>
+          <li>Contact</li>
+          <li>Our Benefits</li>
+          <li>Sitemap</li>
+          <li>B2B - Rentomojo for Business</li>
+          <li>Mojo Mover</li>
+          <li>AQI</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li>Blog</li>
+          <li>Support Home</li>
+          <li>Documents Required</li>
+          <li>Annual Returns</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>POLICIES</h4>
+        <ul>
+          <li>Shipping Policy</li>
+          <li>Cancellation & Return</li>
+          <li>Privacy Policy</li>
+          <li>CSR Policy</li>
+          <li>Rental Terms & Conditions</li>
+          <li>Referral Terms & Conditions</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>NEED HELP ?</h4>
+        <p class="email"><i class="bi bi-send"></i> jo@rentomojo.com</p>
+
+        <h4 class="download">DOWNLOAD APP</h4>
+        <div class="app-btns">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
+        </div>
+      </div>
+
     </div>
 
-    <div class="footer-col">
-      <h4>INFORMATION</h4>
-      <ul>
-        <li>Blog</li>
-        <li>Support Home</li>
-        <li>Documents Required</li>
-        <li>Annual Returns</li>
-      </ul>
+    <!-- LOWER FOOTER -->
+    <div class="footer-bottom">
+      <div class="container bottom-flex">
+
+        <div class="footer-left">
+          © 2025. Rentomojo Private Limited (formerly <br>Edunetwork Pvt. Ltd.)
+        </div>
+
+        <div class="footer-center">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-globe"></i></a>
+        </div>
+
+        <div class="footer-right">
+          <a href="#top">Go Up ↑</a>
+        </div>
+
+      </div>
     </div>
 
-    <div class="footer-col">
-      <h4>POLICIES</h4>
-      <ul>
-        <li>Shipping Policy</li>
-        <li>Cancellation & Return</li>
-        <li>Privacy Policy</li>
-        <li>CSR Policy</li>
-        <li>Rental Terms & Conditions</li>
-        <li>Referral Terms & Conditions</li>
-      </ul>
-    </div>
+  </footer>
 
-    <div class="footer-col">
-      <h4>NEED HELP ?</h4>
-      <p class="email">✈ jo@rentomojo.com</p>
 
-      <h4 class="download">DOWNLOAD APP</h4>
-      
-    </div>
 
-  </div>
 
- 
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- owlcloser -->
+<script>
+$('.product-carousel').owlCarousel({
+  loop:true,
+  margin:20,
+  dots:true,
+  nav:true,
+  autoplay:true,
+  autoplayTimeout:3000,
+  autoplayHoverPause:false,
+  responsive:{
+    0:{ items:1 },
+    600:{ items:2 },
+    1000:{ items:4 }
+  }
+});
+
+
+
+  $('.testi-carousel').owlCarousel({
+    loop: true,
+    margin: 30,              
+    dots: true,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 }
+    }
+  });
+
+
+
+
+</script>
+
 </body>
+
 </html>

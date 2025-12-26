@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rent Plan UI</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#f4f6f8;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:16px; /* 👈 fullscreen margin */
+}
+
+/* MAIN CARD */
+.card{
+  width:100%;
+  max-width:420px;
+  height:100vh;
+  max-height:95vh;       /* 👈 screen se thoda andar */
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+/* HEADER */
+.header{
+  padding:20px;
+  border-bottom:1px solid #eee;
+}
+
+.header h3{
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.deposit{
+  font-size:14px;
+  color:#666;
+}
+
+.deposit span{
+  text-decoration:line-through;
+  color:#999;
+}
+
+/* SECTION */
+.section{
+  padding:20px;
+  border-bottom:1px solid #eee;
+}
+
+.section-title{
+  font-size:14px;
+  margin-bottom:12px;
+}
+
+/* CAPACITY */
+.capacity{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.capacity button{
+  padding:10px 0;
+  border:1px dashed #ccc;
+  border-radius:6px;
+  background:#fff;
+  font-size:14px;
+  cursor:pointer;
+  color:#777;
+  transition:0.3s;
+}
+
+.capacity button:hover{
+  border-color:#00bcd4;
+  color:#00bcd4;
+  transform:translateY(-2px);
+}
+
+.capacity button.active{
+  border:1px solid #00bcd4;
+  color:#00bcd4;
+  font-weight:bold;
+}
+
+/* TENURE */
+.tenure-head{
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+  margin-bottom:15px;
+}
+
+input[type=range]{
+  width:100%;
+  accent-color:#ff5252;
+}
+
+/* PRICE */
+.price-box{
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #eee;
+}
+
+.price{
+  font-size:28px;
+  font-weight:bold;
+}
+
+.old-price{
+  font-size:14px;
+  text-decoration:line-through;
+  color:#999;
+}
+
+.price-label{
+  font-size:13px;
+  color:#777;
+}
+
+.benefits{
+  font-size:13px;
+  color:#555;
+}
+
+.benefits div{
+  margin-bottom:6px;
+}
+
+/* INFO ROWS */
+.info{
+  padding:14px 20px;
+  border-bottom:1px solid #eee;
+  font-size:14px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
+}
+
+.info:hover{
+  background:#f9f9f9;
+}
+
+/* WARNING */
+.warning{
+  background:#fff1f1;
+  color:#e53935;
+  padding:12px 20px;
+  font-size:13px;
+}
+
+/* BUTTON */
+.btn{
+  margin-top:auto;           /* 👈 bottom pe chipka */
+  background:#d93025;
+  color:#fff;
+  text-align:center;
+  padding:18px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#c62828;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <div class="header">
+    <h3>Double Door Fridge (240 Litre)</h3>
+    <div class="deposit">
+      100% Refundable deposit <span>₹1629</span> <b>₹949</b>
+    </div>
+  </div>
+
+  <!-- CAPACITY -->
+  <div class="section">
+    <div class="section-title">Capacity : <b>240 L</b></div>
+    <div class="capacity">
+      <button class="active">240 L</button>
+      <button>190 L</button>
+      <button>210 L</button>
+      <button>45 L</button>
+    </div>
+  </div>
+
+  <!-- TENURE -->
+  <div class="section">
+    <div class="tenure-head">
+      <span>Choose Tenure</span>
+      <span style="color:#00bcd4;">Compare All Tenures</span>
+    </div>
+    <input type="range" min="1" max="36" value="36">
+  </div>
+
+  <!-- PRICE -->
+  <div class="price-box">
+    <div>
+      <div class="price">₹949 <span class="old-price">₹2243</span></div>
+      <div class="price-label">Monthly Rent</div>
+    </div>
+    <div class="benefits">
+      <div>● Free relocation</div>
+      <div>● Free upgrades</div>
+    </div>
+  </div>
+
+  <div class="info">
+    <span>What if I cancel before 36 months?</span>
+    <span>›</span>
+  </div>
+
+  <div class="info">
+    <span>How do I extend tenure?</span>
+    <span>›</span>
+  </div>
+
+  <div class="warning">
+    Advance Rental is not applicable for selected tenure
+  </div>
+
+  <div class="btn">
+    🛒 Book your plan
+  </div>
+
+</div>
+
+</body>
+</html>
